@@ -1,10 +1,10 @@
-import "./styles.css";
+const convertStringOrVariableToConstantsName = (value) => {
+  // Company Members Access Click
+  // COMPANY_MEMBERS_ACCESS_CLICK
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+  return value?.toUpperCase()?.split(" ")?.join("_");
+};
+
+console.log(
+  convertStringOrVariableToConstantsName("Company Members Access Click")
+);
