@@ -1,8 +1,3 @@
-import {
-  convertStringOrVariableToConstantsName,
-  copyToClipboard
-} from "./Utils";
+import { generateKeyValueObjectFromString } from "./Utils";
 
-copyToClipboard(
-  convertStringOrVariableToConstantsName("Company Members Access Click")
-);
+console.log(generateKeyValueObjectFromString("Company Members Access Click"));
