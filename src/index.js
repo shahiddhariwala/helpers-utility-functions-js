@@ -1,10 +1,8 @@
-const convertStringOrVariableToConstantsName = (value) => {
-  // Company Members Access Click
-  // COMPANY_MEMBERS_ACCESS_CLICK
+import {
+  convertStringOrVariableToConstantsName,
+  copyToClipboard
+} from "./Utils";
 
-  return value?.toUpperCase()?.split(" ")?.join("_");
-};
-
-console.log(
+copyToClipboard(
   convertStringOrVariableToConstantsName("Company Members Access Click")
 );
